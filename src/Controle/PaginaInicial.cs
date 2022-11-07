@@ -15,7 +15,7 @@ namespace System_Application
         public PaginaInicial()
         {
             InitializeComponent();
-            Version.Text =  Resource1.version + "v";
+            Version.Text = resources.version + "v";
         }
     }
 }
