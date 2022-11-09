@@ -12,7 +12,7 @@
 
 # :clipboard: Descrição
 <div>
-<h3 align="center">Essa aplicação foi criada em .NET Core usando a IDE Visual Studio, ainda está em desenvolvimento, então poderá apresenter alguns erros que estarei consertando. Esse aplicativo faz coisas que comércios que contém clientes precisam usar, ele pode gerenciar cadastros de clientes e ainda pode adicionar mais.</h5>
+<h3 align="center">Essa aplicação foi criada em .NET Core usando a IDE Visual Studio, ainda está em desenvolvimento, então poderá apresentar alguns erros que estarei consertando. Esse aplicativo faz coisas que comércios que contém clientes precisam usar, ele pode gerenciar cadastros de clientes.</h5>
 <img width="40%" height="35%" src="https://github.com/Darkx32/Registration-Application/blob/master/src/Images/Menu_Inicio.png"/>
 <img align="right" width="40%" height="35%" src="https://github.com/Darkx32/Registration-Application/blob/master/src/Images/Menu_Contas.png"/>
 </div>
