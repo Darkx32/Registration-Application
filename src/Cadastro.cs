@@ -33,7 +33,14 @@
             finally
             {
                 MessageBox.Show("Pessoa cadastrada com sucesso.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                name.Text = string.Empty;
+                number.Text = string.Empty;
+                age.Text = string.Empty;
+                cpf.Text = string.Empty;
+                email.Text = string.Empty;
             }
+
+            
         }
 
         private void Cadastro_FormClosing(object sender, FormClosingEventArgs e)
