@@ -26,6 +26,8 @@
  # :file_folder: Código fonte e download
  <div>
  <p>Para baixar o código fonte é só <a href="https://github.com/Darkx32/Registration-Application/archive/refs/heads/master.zip">clicar aqui</a> e para download da pasta com o executável <a href="https://github.com/Darkx32/Registration-Application/releases/download/0.0.1/Registration-Application.zip">clique aqui.</a></p>
+ 
+ <p>Para executar o aplicativo, instale o .NET 6.0.11 ou superior, para instalar o 6.0.11 <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.11-windows-x64-installer">clique aqui</a> para versão 64 bits e <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.11-windows-x86-installer">clique aqui</a> para versão 32 bits.</p>
  </div>
  
  # :heavy_check_mark: Tecnologias usadas
