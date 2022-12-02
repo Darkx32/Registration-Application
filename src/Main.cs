@@ -1,3 +1,5 @@
+using System_Application.src.CustonsWindows;
+
 namespace System_Application
 {
     public partial class Main : Form
@@ -41,8 +43,8 @@ namespace System_Application
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = (MessageBox.Show("Deseja cancelar mesmo?", "Cancelar", MessageBoxButtons.YesNo)
-                == DialogResult.No);
+            e.Cancel = (MessageBoxCustom.Show("Deseja cancelar mesmo?", "Cancelar", this)
+                == DialogResult.Cancel);
         }
     }
 }

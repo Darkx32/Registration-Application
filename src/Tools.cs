@@ -33,8 +33,8 @@
         {
             if (e.RowIndex < 0) return;
             DataGridViewRow row = dataView.Rows[e.RowIndex];
-            ManagementXML.ChangeValueFromType(int.Parse(row.Cells[0].Value.ToString()) - 1,
-                row.Cells[e.ColumnIndex].Value.ToString(), (ManagementXML.Values)e.ColumnIndex);
+            ManagementXML.ChangeValueFromType(int.Parse(row.Cells[0].Value.ToString()!) - 1,
+                row.Cells[e.ColumnIndex].Value.ToString()!, (ManagementXML.Values)e.ColumnIndex);
         }
 
         private void Search_Enter(object sender, EventArgs e)
@@ -55,7 +55,7 @@
 
             for(int i = 0; i < dataView.Rows.Count ; i++)
             {
-                if (dataView.Rows[i].Cells[(int)ManagementXML.Values.name].Value.ToString().Contains(Search.Text))
+                if (dataView.Rows[i].Cells[(int)ManagementXML.Values.name].Value.ToString()!.Contains(Search.Text))
                 {
                     dataView.Rows[i].Visible = true;
                 } else

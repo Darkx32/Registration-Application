@@ -1,4 +1,6 @@
-﻿namespace System_Application
+﻿using System_Application.src.CustonsWindows;
+
+namespace System_Application
 {
     public partial class Cadastro : Form
     {
@@ -45,8 +47,8 @@
 
         private void Cadastro_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = (MessageBox.Show("Deseja cancelar mesmo?", "Cancelar", MessageBoxButtons.YesNo) 
-                == DialogResult.No);
+            e.Cancel = (MessageBoxCustom.Show("Deseja cancelar mesmo?", "Cancelar", this) 
+                == DialogResult.Cancel);
         }
     }
 }

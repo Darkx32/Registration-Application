@@ -6,6 +6,18 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Version>0.0.2</Version>
+    <Authors>Darkx32</Authors>
+    <Company></Company>
+    <Product>Registration-Application</Product>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Darkx32/Registration-Application</RepositoryUrl>
+    <Description>Um simples aplicativo onde podemos gerenciar cadastro de pessoas, podendo editá-las e adicioná-las.</Description>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
+    <FileVersion></FileVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <PackageId>Registration-Application</PackageId>
+    <Platforms>AnyCPU;x86;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +33,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

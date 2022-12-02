@@ -53,7 +53,7 @@ namespace System_Application
             {
                 XDocument xdoc = XDocument.Load(FileName);
 
-                return xdoc.Root.Elements().Count();
+                return xdoc.Root!.Elements().Count();
             }
             return 0;
         }
@@ -66,14 +66,14 @@ namespace System_Application
 
             XDocument xdoc = XDocument.Load(FileName);
 
-            foreach(XElement element in xdoc.Root.Elements())
+            foreach(XElement element in xdoc.Root!.Elements())
             {
-                string id = element.Attribute("id").Value;
-                string name = element.Attribute("nome").Value;
-                string email = element.Attribute("email").Value;
-                string number = element.Attribute("número").Value;
-                string age = element.Attribute("idade").Value;
-                string cpf = element.Attribute("cpf").Value;
+                string id = element.Attribute("id")!.Value;
+                string name = element.Attribute("nome")!.Value;
+                string email = element.Attribute("email")!.Value;
+                string number = element.Attribute("número")!.Value;
+                string age = element.Attribute("idade")!.Value;
+                string cpf = element.Attribute("cpf")!.Value;
 
                 User user = new User(id, name, email, number, age, cpf);
                 users.Add(user);
@@ -88,9 +88,9 @@ namespace System_Application
 
             XDocument xdoc = XDocument.Load(FileName);
 
-            for(int count = 0; count < xdoc.Root.Elements().Count(); count++)
+            for(int count = 0; count < xdoc.Root!.Elements().Count(); count++)
             {
-                xdoc.Root.Elements().ElementAt(count).Attribute("id").Value = (count + 1).ToString();
+                xdoc.Root.Elements().ElementAt(count).Attribute("id")!.Value = (count + 1).ToString();
             }
 
             xdoc.Save(FileName);
@@ -105,23 +105,23 @@ namespace System_Application
             switch (type)
             {
                 case Values.name:
-                    xdoc.Root.Elements().ElementAt(id).Attribute("nome").Value = value;
+                    xdoc.Root!.Elements().ElementAt(id).Attribute("nome")!.Value = value;
                     break;
 
                 case Values.email:
-                    xdoc.Root.Elements().ElementAt(id).Attribute("email").Value = value;
+                    xdoc.Root!.Elements().ElementAt(id).Attribute("email")!.Value = value;
                     break;
 
                 case Values.number:
-                    xdoc.Root.Elements().ElementAt(id).Attribute("número").Value = value;
+                    xdoc.Root!.Elements().ElementAt(id).Attribute("número")!.Value = value;
                     break;
 
                 case Values.age:
-                    xdoc.Root.Elements().ElementAt(id).Attribute("idade").Value = value;
+                    xdoc.Root!.Elements().ElementAt(id).Attribute("idade")!.Value = value;
                     break;
 
                 case Values.cpf:
-                    xdoc.Root.Elements().ElementAt(id).Attribute("cpf").Value = value;
+                    xdoc.Root!.Elements().ElementAt(id).Attribute("cpf")!.Value = value;
                     break;
             }
 

@@ -61,7 +61,7 @@ namespace System_Application {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a 0.0.1.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 0.0.2.
         /// </summary>
         internal static string version {
             get {
