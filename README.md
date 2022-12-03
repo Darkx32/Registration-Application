@@ -1,7 +1,7 @@
 <h1 align="center"> Registration-Application </h1>
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=license&message=AGPL-3.0&color=green&style=flat"/>
-<img src="http://img.shields.io/static/v1?label=status&message=beta&color=orange&style=plastic"/>
+<img src="http://img.shields.io/static/v1?label=status&message=release&color=green&style=plastic"/>
 </p>
 
 # :world_map: Índice
